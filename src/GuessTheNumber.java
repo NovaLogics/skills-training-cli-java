@@ -1,5 +1,7 @@
 package src;
 
+// Online Java Compiler
+// https://www.programiz.com/java-programming/online-compiler/
 import java.util.Random;
 import java.util.Scanner;
 
@@ -18,12 +20,15 @@ public class GuessTheNumber {
             numberOfTries++;
 
             if (playerGuess < numberToGuess) {
-                System.out.println("Too low! Try again.");
-            } else if (playerGuess > numberToGuess) {
-                System.out.println("Too high! Try again.");
-            } else {
+                System.out.println(">>Too low! Try again.");
+            } 
+            else if (playerGuess > numberToGuess) {
+                System.out.println(">>Too high! Try again.");
+            } 
+            else {
                 hasGuessedCorrectly = true;
-                System.out.println("Congratulations! You've guessed the number in " + numberOfTries + " tries.");
+                System.out.println("\nCongratulations!");
+                 System.out.println("You've guessed the number in " + numberOfTries + " tries.");
             }
         }
         scanner.close();
